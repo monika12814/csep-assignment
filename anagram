@@ -1,0 +1,13 @@
+def isAnagram(a, b):
+    
+    #Unequal length
+    if len(a) != len(b):
+        return False
+    first = sorted(a)
+    second = sorted(b)
+    
+    #check if both the strings are same
+    if first == second:
+        return True
+    else:
+        return False
