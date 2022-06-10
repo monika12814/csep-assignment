@@ -1,0 +1,16 @@
+p = float(input("Enter the principal balance = "))
+r = float(input("Enter the interest rate = "))
+n = int(input("Enter compound frequency / year = "))
+t = int(input("Enter the year  = "))
+# compounded value
+amount = p * (1 + r/(100 * n))**(n*t)
+#compound interest
+ci = amount - p;
+# display result upto 2 decimal places
+print("Compound interest = ",round(ci, 2))
+
+
+
+
+
+
